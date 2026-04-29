@@ -16,7 +16,8 @@ export default function SignUpPage() {
             const message = generateErrorMessage(error);
             toast.error(message, {
                 position: "top-center"
-            })
+            });
+            setPassword("");
         }
     });
 
